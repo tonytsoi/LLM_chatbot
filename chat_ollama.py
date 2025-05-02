@@ -30,7 +30,7 @@ for message in st.session_state.messages:
         st.markdown(message['content'])
         
 # Accept user input
-if prompt := st.chat_input("What do want to ask?"):
+if prompt := st.chat_input("What do you want to ask?"):
     # Display user message in chat message container
     with st.chat_message("user"):
         st.markdown(prompt)

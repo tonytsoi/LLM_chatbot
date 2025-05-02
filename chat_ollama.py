@@ -2,7 +2,15 @@ from langchain_ollama import ChatOllama
 import streamlit as st
 
 def generate_response(input_text):
-    model = ChatOllama(model="Llama3.2")
+    model = ChatOllama(
+                model="Llama3.2",
+                
+                # Set a lower temperature for more consistent output
+                temperature = 0.3,
+                
+                # Maximum no. of new tokens
+                num_predict = 2048
+                )
     
     response = model.invoke(input_text).content
     

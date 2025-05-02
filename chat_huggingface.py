@@ -9,6 +9,9 @@ def generate_response(input_text):
                 "text-generation",
                 model=model_id,       
                 
+                # Set a lower temperature for more consistent output
+                temperature=0.3,
+                
                 # Maximum no. of new tokens
                 max_new_tokens=2048,
                 

@@ -16,7 +16,9 @@ def generate_response(input_text):
                 max_new_tokens=2048,
                 
                 # Return only the text after the input text
-                return_full_text=False
+                return_full_text=False,
+                
+                # device = "cuda"
             )
     
     # Quick fix for Langchain error

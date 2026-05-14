@@ -142,9 +142,3 @@ LangChain's chat model interface (`model.invoke()`) provides a unified API acros
 | `langchain-huggingface` | LangChain integration for HuggingFace |
 | `transformers` | HuggingFace model loading and inference pipeline |
 | `accelerate` | Efficient model loading (required by `transformers`) |
-
----
-
-## License
-
-This project is released under the [MIT License](https://opensource.org/licenses/MIT).
